@@ -5,8 +5,7 @@ import requests
 
 clear = lambda: os.system('cls')
 
-ip = requests.get('http://checkip.dyndns.org/').text
-ip = ip = ip[76:].replace('</body></html>','').rstrip()
+ip = requests.get('https://api.ipify.org').text
 
 for x in range(int(2)):
     print ('loading epic hacks.')
